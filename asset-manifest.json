@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/fer/static/css/main.c08909db.css",
+    "main.js": "/fer/static/js/main.57eb09ca.js",
+    "static/media/horse.jpeg": "/fer/static/media/horse.0a692ec6b55fb0800797.jpeg",
+    "static/media/app_preview.png": "/fer/static/media/app_preview.e6c8eeee8d141f505839.png",
+    "static/media/yoga.png": "/fer/static/media/yoga.80d2d8ad5a45ebeb4123.png",
+    "static/media/fight.png": "/fer/static/media/fight.35ff22d8bbbadd1d1568.png",
+    "static/media/boat.png": "/fer/static/media/boat.d82ddc3eeda7fa1ec3eb.png",
+    "static/media/Montserrat-Regular.ttf": "/fer/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Montserrat-Bold.ttf": "/fer/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
+    "static/media/Montserrat-Medium.ttf": "/fer/static/media/Montserrat-Medium.e2d60bc49517598c0ce8.ttf",
+    "static/media/Montserrat-SemiBold.ttf": "/fer/static/media/Montserrat-SemiBold.04af9a9e62bb4c47bd55.ttf",
+    "static/media/Roboto-Bold.ttf": "/fer/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
+    "static/media/Poppins-Regular.ttf": "/fer/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
+    "static/media/Poppins-Medium.ttf": "/fer/static/media/Poppins-Medium.9e1bb626874ed49aa343.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/fer/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
+    "static/media/phone_2.png": "/fer/static/media/phone_2.f493e804f007865fae98.png",
+    "static/media/phone.png": "/fer/static/media/phone.505ccac3e3f7a5ae40ca.png",
+    "static/media/womanRow.png": "/fer/static/media/womanRow.459c5329137cfcde98df.png",
+    "static/media/timeRow.svg": "/fer/static/media/timeRow.5a1f57b74663ce53c7cb1ab2dbaaa07d.svg",
+    "static/media/phone_3.png": "/fer/static/media/phone_3.4bf7c1ba1338755dc082.png",
+    "static/media/rock_climbing_row.svg": "/fer/static/media/rock_climbing_row.e6366298c97e5ac00c41ae9eba8fb48a.svg",
+    "static/media/fitness_row.svg": "/fer/static/media/fitness_row.7050d7227510e08ef80ffa6d554c2f5b.svg",
+    "static/media/dateRow.svg": "/fer/static/media/dateRow.c765508d404a5d29e7f1700075f0c0f3.svg",
+    "index.html": "/fer/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.c08909db.css",
+    "static/js/main.57eb09ca.js"
+  ]
+}
