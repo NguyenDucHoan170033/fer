@@ -52,17 +52,10 @@ const Footer = () => {
             </Links>
           </Col>
           <ColText>
-            <Text>Copyright © 2022 Teache. All rights reserved</Text>
+            <Text>Copyright © 2022 HalMintion. All rights reserved</Text>
           </ColText>
           <ColBtn>
-            <Buttons>
-              <Button icon={<AppleIcon />} bg="blue">
-                Apple Store
-              </Button>
-              <Button icon={<GoogleIcon />} bg="blue">
-                Google play
-              </Button>
-            </Buttons>
+         
           </ColBtn>
         </Row>
       </Container>

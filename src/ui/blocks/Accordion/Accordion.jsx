@@ -17,8 +17,7 @@ import {
 import { routesPath } from "../../../conts/routes";
 import { Container } from "../../base/Container";
 import { MinusIcon, PlusIcon } from "../../icons";
-import { instructorsFaq, usersFaq } from "./faqLists";
-import { KeyWords } from "./KeyWords";
+import { usersFaq } from "./faqLists";
 
 const makeOpenItemId = (index, id) => `${index}_${id}`;
 
@@ -49,9 +48,8 @@ const FaqAccordion = ({ openItems, handleItemClick, array }) =>
 
 const Accordion = ({ filterBySearch }) => {
   const [openItems, setOpenItems] = useState([]);
-  const [activeTab, setActive] = useState({ users: true, instructors: false });
+  const [activeTab, setActive] = useState({ users: true });
   const [usersFAQ, setUsersFAQ] = useState(usersFaq);
-  const [instructorsFAQ, setInstructorsFAQ] = useState(instructorsFaq);
   const [filterData, setFilterData] = useState([]);
 
   const location = useLocation();
@@ -63,7 +61,7 @@ const Accordion = ({ filterBySearch }) => {
     for (let item of baseData) {
       for (let keyWord of searchedItem) {
         if (keyWord.length > 0) {
-          if(keyWord == ''){
+          if (keyWord == '') {
             return;
           }
           if (item?.title?.toLowerCase()?.includes(keyWord.toLowerCase()) || item?.text?.toLowerCase()?.includes(keyWord.toLowerCase())) {
@@ -79,64 +77,23 @@ const Accordion = ({ filterBySearch }) => {
     return filterData;
   };
 
-  const checkMatch = (keywords, searchData) => {
-    let isSearched = false;
-    for (let i = 0; i < keywords.length; i++) {
-      for (let j = 0; j < searchData.length; j++) {
-        if (keywords[i] === searchData[j]) {
-          return (isSearched = true);
-        }
-      }
-    }
-    return isSearched;
-  };
-
   const resetSearch = () => {
-    setFilterData([usersFaq]);
-    setInstructorsFAQ(instructorsFaq);
+    setFilterData(usersFaq);
     setUsersFAQ(usersFaq);
   };
 
-  // Check if the SearchData contains at least one of keywords.
-  const isKeyWordRequired = () => {
-    if (activeTab.users) {
-      filterBySearch.length <= 1 && resetSearch();
-      return checkMatch(KeyWords.user, filterBySearch);
-    } else {
-      filterBySearch.length <= 1 && resetSearch();
-      return checkMatch(KeyWords.instructors, filterBySearch);
-    }
-  };
-
-  
   useEffect(() => {
     console.log("Fileter: ", filterBySearch)
-    if((filterBySearch.length==1 && filterBySearch[0]=='') || filterBySearch.length == 0){
-      if (activeTab.users) {
-        setFilterData(usersFAQ);
-      } else {
-        setFilterData(instructorsFAQ);
-      }
+    if ((filterBySearch.length == 1 && filterBySearch[0] == '') || filterBySearch.length == 0) {
+      setFilterData(usersFAQ);
       return;
     }
-    // if (isKeyWordRequired()) {
-      if (activeTab.users) {
-        const mathArray = searchStringInArray(usersFaq, filterBySearch);
-        setFilterData(mathArray);
-      } else {
-        const mathArray = searchStringInArray(instructorsFaq, filterBySearch);
-        setFilterData(mathArray);
-      }
-    // }
+    const mathArray = searchStringInArray(usersFaq, filterBySearch);
+    setFilterData(mathArray);
   }, [filterBySearch, activeTab]);
 
   useEffect(() => {
-    if (faqtab === "instructors") {
-      setActive({ users: false, instructors: true });
-    } else {
-      setActive({ users: true, instructors: false });
-    }
-
+    setActive({ users: true });
     setOpenItems([]);
   }, [setOpenItems, faqtab]);
 
@@ -154,14 +111,8 @@ const Accordion = ({ filterBySearch }) => {
 
   const handleClickFirstTab = () => {
     filterBySearch.length <= 1 && resetSearch();
-    setActive({ users: true, instructors: false });
+    setActive({ users: true });
     navigate(`${routesPath.faq}?tab=users`, { replace: true });
-  };
-
-  const handleClickSecondtTab = () => {
-    filterBySearch.length <= 1 && resetSearch();
-    setActive({ users: false, instructors: true });
-    navigate(`${routesPath.faq}?tab=instructors`, { replace: true });
   };
 
   return (
@@ -172,9 +123,6 @@ const Accordion = ({ filterBySearch }) => {
           <Tabs>
             <Tab active={activeTab.users} onClick={handleClickFirstTab}>
               Users
-            </Tab>
-            <Tab active={activeTab.instructors} onClick={handleClickSecondtTab}>
-              Instructors
             </Tab>
           </Tabs>
         </Header>

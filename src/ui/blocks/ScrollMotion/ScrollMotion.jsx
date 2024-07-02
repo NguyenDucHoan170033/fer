@@ -15,7 +15,7 @@ import {
   StickyStyled,
 } from "./ScrollMotionStyled";
 import { Info } from "../../../ui/blocks/Info";
-import { Download } from "../../../ui/blocks/Download";
+
 import { Neighborhood } from "../../../ui/blocks/Neighborhood";
 import { Gallery } from "../../../ui/blocks/Gallery";
 import { Footer } from "../../../ui/blocks/Footer";
@@ -256,10 +256,10 @@ const ScrollMotion = ({ setHeadColor, setHeadSolid, setBottomShow }) => {
         </PictureRowsWrapper>
         {/* Text columns */}
         <Column right first  className='slide3'>
-          <ColumnTitle>Choose a class</ColumnTitle>
+          <ColumnTitle>Stainless Steel Chronograph</ColumnTitle>
           <ColumnText>
-            You will be able to see what <br /> types of classes are available{" "}
-            <br /> in your neighborhood
+          Introducing the Stainless Steel Chronograph <br /> a masterpiece of engineering and design.{" "}
+           
           </ColumnText>
         </Column>
         {/* Phone images */}
@@ -297,10 +297,10 @@ const ScrollMotion = ({ setHeadColor, setHeadSolid, setBottomShow }) => {
           </PictureRow>
         </PictureRowsWrapper>
         <Column left middle  className='slide3'>
-          <ColumnTitle>Select an Instructor</ColumnTitle>
+          <ColumnTitle>Water-resistant up to 50 meters</ColumnTitle>
           <ColumnText>
-            See the different instructors <br /> for the type of classes <br />{" "}
-            selected, price and reviews
+          Luminous hands and markers <br /> Sub-dials for 24-hour <br />{" "}
+          60-minute, and 60-second display
           </ColumnText>
         </Column>
         <PhoneWrapper>

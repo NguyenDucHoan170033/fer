@@ -26,9 +26,7 @@ const Header = ({ solid, color }) => {
             <Link to={routesPath.faq}>
               <Anchor color={color}>FAQ</Anchor>
             </Link>
-            <HashLink to={`${routesPath.main}#download`}>
-              <Anchor color={color}>Download</Anchor>
-            </HashLink>
+           
           </Navigation>
         </HeaderContent>
       </Container>

@@ -101,11 +101,10 @@ const Gallery = () => {
               <>
               <Content title={2}>
                 <Title>
-                  Share Your Talents <br />& Become a Teacher
+                Discover the New Collection
                 </Title>
                 <Text width={365}>
-                  Join our instructors' network and give classes in your
-                  neighborhood
+                The perfect blend of tradition and modernity. This watch features a sleek leather strap and a sophisticated dial.
                 </Text>
               </Content>
             <ImageWrapper ref={yogaPicRef} yoga>
@@ -125,8 +124,7 @@ const Gallery = () => {
             {isMobile && (
               <Content second>
                 <Text width={340}>
-                  Choose your own locations for your class, your home, public
-                  park, anywhere you can teach
+                Designed for those who appreciate timeless style and unparalleled craftsmanship.
                 </Text>
               </Content>
             )}
@@ -151,14 +149,13 @@ const Gallery = () => {
             {!isMobile ? (
               <Content four>
                 <Text width={365}>
-                  Receive payments through the app and keep track of your
-                  revenue
+                Step into the world of elegance and precision with our latest collection of luxury watches. 
                 </Text>
               </Content>
             ) : (
               <Content third>
                 <Text big>
-                  Manage your own schedule and give classes whenever you feel to
+          Designed for those who appreciate timeless style and unparalleled craftsmanship.
                 </Text>
               </Content>
             )}
@@ -169,7 +166,7 @@ const Gallery = () => {
                 <Text
                   style={isMobile ? { fontSize: theme.fonts["regular"] } : {}}
                 >
-                  Manage your own schedule and give classes whenever you feel to
+                  Designed for those who appreciate timeless style and unparalleled craftsmanship.
                 </Text>
               </Content>
             )}

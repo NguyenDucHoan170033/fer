@@ -4,7 +4,7 @@ import ScrollMotion from "../ui/blocks/ScrollMotion/ScrollMotion";
 import { ScrollToTop } from "../ui/base/ScrollToTop";
 import { Gallery } from "../ui/blocks/Gallery";
 import { Info } from "../ui/blocks/Info";
-import { Download } from "../ui/blocks/Download";
+
 import { Neighborhood } from "../ui/blocks/Neighborhood";
 import { Footer } from "../ui/blocks/Footer";
 const HomePage = () => {
@@ -26,7 +26,7 @@ const HomePage = () => {
         { bottomShow 
           ? <>
                 <Info />
-                <Download />
+              
                 <Neighborhood />
                 <Gallery />
                 <Footer />

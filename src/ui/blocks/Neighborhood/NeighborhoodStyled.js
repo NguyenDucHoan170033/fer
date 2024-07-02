@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { themeColor, themeFontSize } from "../../theme";
-import { InputWrapper } from "../../base/Input/InputStyled";
+
 import { ButtonStyled } from "../../base/Button/ButtonStyled";
 
 export const NeighborhoodWrapper = styled.div`
@@ -53,13 +53,13 @@ export const Form = styled.div`
   max-width: 670px;
   width: 100%;
   margin: 30px auto 0;
-  ${InputWrapper} {
+ {
     margin-right: 20px;
     max-width: 329px;
   }
   @media (max-width: 1200px) {
     margin: 30px auto 0;
-    ${InputWrapper} {
+     {
       margin-right: 10px;
       max-width: 264px;
       width: 100%;
@@ -68,7 +68,7 @@ export const Form = styled.div`
   @media (max-width: 640px) {
     flex-wrap: wrap;
     max-width: 280px;
-    ${InputWrapper} {
+
       margin-right: 0;
       width: 100%;
       max-width: 280px;
