@@ -333,9 +333,9 @@ const ScrollMotion = ({ setHeadColor, setHeadSolid, setBottomShow }) => {
           </PictureRow>
         </PictureRowsWrapper>
         <Column className="last slide3" right last dark>
-          <ColumnTitle>Schedule Class</ColumnTitle>
+          <ColumnTitle>STYLE BACKED BY SCIENCE</ColumnTitle>
           <ColumnText>
-            Select dateand time you want <br /> to takethe class and that’s it!
+          The latest addition to the  <br /> Khaki Navy BeLOWZERO collection
           </ColumnText>
         </Column>
         <PhoneWrapper>
