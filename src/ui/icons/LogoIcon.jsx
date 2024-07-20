@@ -2,12 +2,18 @@ import React from "react";
 import { theme } from "../theme/default";
 
 export const LogoIcon = ({ color = "blue" }) => {
+  const handleClick = () => {
+    window.location.href = "http://localhost:8080/SWP/homecontroll";
+  };
+
   return (
     <svg
       width="170"
       height="30"
       viewBox="0 0 170 30"
       xmlns="http://www.w3.org/2000/svg"
+      style={{ cursor: 'pointer' }}
+      onClick={handleClick}
     >
       <text
         x="50%"
