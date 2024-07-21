@@ -3,7 +3,7 @@ import { theme } from "../theme/default";
 
 export const LogoIcon = ({ color = "blue" }) => {
   const handleClick = () => {
-    window.location.href = "http://localhost:8080/SWP/homecontroll";
+    window.location.href = "http://localhost:8080/vnpay_jsp/homecontroll";
   };
 
   return (
